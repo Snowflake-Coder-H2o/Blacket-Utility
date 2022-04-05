@@ -1,5 +1,6 @@
 // Version for Snowlord's Dev Console (School Chromebook) --> https://github.com/SnowLord7/devconsole
-
+ 
+// I made a github! I'll put all future updates and scripts there, and will post an announcement in The Blacket Trading Hub when there is an update.
 // https://discord.gg/d2bujc2qAQ
 console.log('You should follow the github page :) https://github.com/tremblero')
  
@@ -42,7 +43,6 @@ var spamOpenBox = async () => {
        openBox(box);
    }
    await sleep(1500); // waits for the API to load the boxes :facepalm:
-   boxesOpened = (boxesOpened + (uncommons+rares+epics+legends+chromas+perfects+mythicals))
    console.log('The farm has completed!\nYou have unboxed around ' + boxesOpened + ' blooks total.')
    if (printWinnings) {
        console.log('Your openings are as follow:')
@@ -72,7 +72,7 @@ function openBox(boxName) {
        window.blookUnlocked = dataSplit[0];
        window.blookRarity = dataSplit[1];
        window.blookImage = dataSplit[2];
-       // boxesOpened = boxesOpened + 1 - gonna use an equation to get a better estimate
+       boxesOpened = boxesOpened + 1
        if (blookRarity === "Uncommon") {
            uncommons = uncommons + 1
            if (printAllRarities) console.log(`Uncommon: ${blookUnlocked}`);
