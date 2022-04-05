@@ -1,3 +1,4 @@
+// I made a github! I'll put all future updates and scripts there, and will post an announcement in The Blacket Trading Hub when there is an update.
 // https://discord.gg/d2bujc2qAQ
 console.log('You should follow the github page :) https://github.com/tremblero')
  
@@ -40,7 +41,6 @@ var spamOpenBox = async () => {
        openBox(box);
    }
    await sleep(1500); // waits for the API to load the boxes :facepalm:
-   boxesOpened = (boxesOpened + (uncommons+rares+epics+legends+chromas+perfects+mythicals))
    console.log('The farm has completed!\nYou have unboxed around ' + boxesOpened + ' blooks total.')
    if (printWinnings) {
        console.log('Your openings are as follow:')
@@ -107,3 +107,5 @@ function openBox(boxName) {
         updateTokens();
     });
 }
+
+
