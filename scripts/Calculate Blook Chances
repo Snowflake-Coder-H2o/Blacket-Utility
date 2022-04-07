@@ -1,3 +1,4 @@
+alert(' Made by Tremblero')
 // https://discord.gg/d2bujc2qAQ
 console.log('You should follow the github page :) https://github.com/tremblero')
 let blook = prompt('What blook are you trying to get?')
